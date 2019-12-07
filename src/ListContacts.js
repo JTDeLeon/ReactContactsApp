@@ -24,7 +24,7 @@ class ListContacts extends Component {
 
     render() {
         // Destructuring 
-        const { contacts, onDeleteContact, onNavigate } = this.props;
+        const { contacts, onDeleteContact } = this.props;
         const { query } = this.state;
 
         let showingContacts;
@@ -55,7 +55,6 @@ class ListContacts extends Component {
                     />
                     <Link 
                         to='/create'
-                        onClick={()=>{onNavigate()}}
                         className='add-contact'
                      >Add Contact</Link>
                 </div>

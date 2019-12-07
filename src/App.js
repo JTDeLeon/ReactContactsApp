@@ -9,7 +9,6 @@ import * as ContactsAPI from './utils/ContactsAPI';
 class App extends Component {
 
   state = {
-    screen: 'list', //list, create
     contacts: []
   }
 
@@ -27,6 +26,14 @@ class App extends Component {
     ContactsAPI.remove(contact);
   }
 
+  createContact(contact) {
+    ContactsAPI.create(contact).then(contact=>{
+      this.setState(prevState => ({
+        contacts : prevState.contacts.concat([contact])
+      }))
+    })
+  }
+
   render () {
     return (
       <div className="App">
@@ -34,13 +41,18 @@ class App extends Component {
           <ListContacts 
             onDeleteContact={this.removeContact} 
             contacts={this.state.contacts}
-            onNavigate={()=>{
-              this.setState({ screen : 'create' });
-            }}
           />
         )}/>
 
-        <Route path="/create" component={CreateContact}/>
+        <Route path="/create" render={({history})=>(
+          // <CreateContact />
+          <CreateContact 
+            onCreateContact={(contact)=>{
+              this.createContact(contact);
+              history.push('/');
+            }}
+            />
+        )}/>
 
         
       </div>
