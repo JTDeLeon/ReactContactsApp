@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/ReactContactsApp/static/css/main.557acf81.chunk.css",
+    "main.js": "/ReactContactsApp/static/js/main.4b858b13.chunk.js",
+    "main.js.map": "/ReactContactsApp/static/js/main.4b858b13.chunk.js.map",
+    "runtime-main.js": "/ReactContactsApp/static/js/runtime-main.892ba373.js",
+    "runtime-main.js.map": "/ReactContactsApp/static/js/runtime-main.892ba373.js.map",
+    "static/js/2.e0ebdc25.chunk.js": "/ReactContactsApp/static/js/2.e0ebdc25.chunk.js",
+    "static/js/2.e0ebdc25.chunk.js.map": "/ReactContactsApp/static/js/2.e0ebdc25.chunk.js.map",
+    "index.html": "/ReactContactsApp/index.html",
+    "precache-manifest.7dfd744fa6afc923afd7514e2aa1973f.js": "/ReactContactsApp/precache-manifest.7dfd744fa6afc923afd7514e2aa1973f.js",
+    "service-worker.js": "/ReactContactsApp/service-worker.js",
+    "static/css/main.557acf81.chunk.css.map": "/ReactContactsApp/static/css/main.557acf81.chunk.css.map",
+    "static/media/index.css": "/ReactContactsApp/static/media/search.b884e292.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.892ba373.js",
+    "static/js/2.e0ebdc25.chunk.js",
+    "static/css/main.557acf81.chunk.css",
+    "static/js/main.4b858b13.chunk.js"
+  ]
+}
